@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://qa.chromeriver.com/stuff/qa-eval.jsp" />
+<title>AutomationQuiz</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AutomationQuiz</td></tr>
+</thead><tbody>
+<tr>
+	<td>function generateRandomString( length, chars ) { var string=prompt(&quot;Please today's random string&quot;,''); if (string == '') {for ( var i = 0 ; i &lt; length ; i++ ) string += chars[ Math.floor( Math.random() * chars.length ) ]; return string;} else { return string;} } </td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Chrome River Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Username: </td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Password:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Company ID:</td>
+	<td></td>
+</tr>
+<!--#case1-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Successful Login</td>
+	<td></td>
+</tr>
+<!--#case2-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case3-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You must enter a Company ID.</td>
+	<td></td>
+</tr>
+<!--#case4-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>You must enter a password.</td>
+	<td></td>
+</tr>
+<!--#case5-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case6-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case7-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case8-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case9 close but Bad password-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case10 close but bad company ID-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.testerr.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+<!--#case11 close but bad username-->
+<tr>
+	<td>open</td>
+	<td>/stuff/qa-eval.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtLogin</td>
+	<td>JSmithh</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtPassword</td>
+	<td>KingOfTest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=txtCompanyID</td>
+	<td>www.tester.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Invalid login...</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
